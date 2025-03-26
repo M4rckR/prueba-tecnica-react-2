@@ -4,7 +4,6 @@
 
 ### API a usar:
 - [OMDb API](https://www.omdbapi.com/)
-- **API_KEY:** 4287ad07
 
 ### Requerimientos:
 - Necesita mostrar un input para buscar la película y un botón para buscar.
