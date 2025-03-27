@@ -2,26 +2,26 @@
 // import withoutResults from '../mocks/no-result.json' 
 const ListOfMovies = ({ movies }) => {
 
-
-
-
   return (
     <>
-      {/* No hay que atarse a la api */}
-      {movies.map((movie) => (
-        <li key={movie.imdbID}>
-          <h3>{movie.Title}</h3>
-          <p>{movie.Year}</p>
-          <img src={movie.Poster} alt={movie.Title} />
-        </li>
-      ))}
+      <ul className="movies">
+        {/* No hay que atarse a la api */}
+        {movies.map((movie) => (
+          <li className="movie" key={movie.id}>
+            <h3>{movie.title}</h3>
+            <p>{movie.year}</p>
+            <img src={movie.poster} alt={movie.title} />
+          </li>
+        ))}
+      </ul>
+
     </>
   );
 };
 
 const NoMoviesResult = () => {
     return (
-        <p>Hola</p>
+        <p style={{textAlign: 'center'}}>No hay peliculas para la busqueda</p>
     )
 }
 
